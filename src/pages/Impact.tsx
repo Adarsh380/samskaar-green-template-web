@@ -34,15 +34,15 @@ const Impact = () => {
     {
       title: "Government School Libraries",
       location: "Hyderabad, Telangana",
-      date: "2022-2024",
+      date: "2022",
       students: "300+",
       description: "In collaboration with Joy of Reading NGO, established fully equipped libraries in 10 government schools. Started with collecting over 1000 books from our community, creating dedicated reading spaces that fostered academic excellence.",
       achievements: ["10 libraries established", "1000+ books collected", "Community collaboration", "Partnership with Joy of Reading NGO"]
     },
     {
       title: "Summer Educational Camps",
-      location: "Government High Schools, Telangana",
-      date: "2023-2024",
+      location: "ZPHS Gachibowli, Telangana",
+      date: "Summer 2023",
       students: "450+",
       description: "Designed and implemented holistic summer camps with trained student volunteers. Programs combined reading practices, STEM education, and health & fitness, creating an engaging learning environment during school holidays.",
       achievements: ["Holistic curriculum design", "Student volunteer training", "STEM & fitness integration", "Overwhelming participation"]
@@ -50,7 +50,7 @@ const Impact = () => {
     {
       title: "Solar-Powered Digital Education",
       location: "Bhadrachalam Bridge Schools",
-      date: "2024",
+      date: "2024-25",
       students: "450+",
       description: "Partnered with Indigenous Development Organization to bring digital literacy to tribal communities. Installed Solar TVs in areas without electricity, with our pilot program dramatically increasing attendance from 5 to over 50 students.",
       achievements: ["15 bridge schools targeted", "Solar TV pilot success", "Ketto fundraising campaign", "₹5.85 lakh raised"]
