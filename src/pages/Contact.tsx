@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Mail, Phone, Clock, Send } from "lucide-react";
+import { MapPin, Mail, Send } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -15,17 +15,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@samskaarfoundation.org", "partnerships@samskaarfoundation.org", "volunteer@samskaarfoundation.org"]
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      details: ["+91 XXXXX XXXXX", "+91 XXXXX XXXXX", "Mon-Fri: 9AM-6PM"]
-    },
-    {
-      icon: Clock,
-      title: "Office Hours",
-      details: ["Monday - Friday", "9:00 AM - 6:00 PM", "Saturday: 10AM-2PM"]
+      details: ["samskaarfoundation@gmail.com", "s.adarshvikas@gmail.com"]
     }
   ];
 
