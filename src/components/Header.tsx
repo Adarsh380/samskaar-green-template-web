@@ -7,6 +7,13 @@ const Header = () => {
   
   const isActive = (path: string) => location.pathname === path;
   
+  const scrollToServices = () => {
+    const servicesSection = document.querySelector('#services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -38,6 +45,12 @@ const Header = () => {
             >
               About
             </Link>
+            <button 
+              onClick={scrollToServices}
+              className="transition-colors text-foreground hover:text-primary"
+            >
+              Services
+            </button>
             <Link 
               to="/impact" 
               className={`transition-colors ${
