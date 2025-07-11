@@ -1,43 +1,50 @@
 
+import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Gallery = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
   const galleryItems = [
     {
-      title: "Library Setup",
-      description: "Students exploring new books in their school library",
-      category: "Libraries"
-    },
-    {
       title: "Summer Camp Activities",
-      description: "Children engaged in creative learning activities",
-      category: "Summer Camps"
+      description: "Students engaged in interactive learning sessions during our summer camp program",
+      category: "Summer Camps",
+      image: "/lovable-uploads/bd130b47-4b42-482d-a313-f9f33cdaf89b.png"
     },
     {
-      title: "Solar TV Installation",
-      description: "Digital literacy program in tribal hamlet",
-      category: "Digital Literacy"
+      title: "Student Interaction Session",
+      description: "Volunteers conducting educational activities with students in classroom setting",
+      category: "Summer Camps",
+      image: "/lovable-uploads/fa949e39-2ff8-44a9-8403-5b1f4e3d05a2.png"
     },
     {
-      title: "Reading Session",
-      description: "Students participating in group reading sessions",
-      category: "Libraries"
+      title: "Classroom Learning Environment",
+      description: "Students participating in focused learning activities with environmental awareness",
+      category: "Educational Programs",
+      image: "/lovable-uploads/c82d35fa-f4e2-450a-a652-ab9880414857.png"
     },
     {
-      title: "Community Gathering",
-      description: "Parents and teachers attending awareness program",
-      category: "Community"
+      title: "Summer Camp Group Session",
+      description: "Community volunteers engaging with students in summer educational programs",
+      category: "Summer Camps",
+      image: "/lovable-uploads/624abae4-7db3-4328-ac3f-b850c3fe1a90.png"
     },
     {
-      title: "Educational Workshop",
-      description: "Teachers training on modern teaching methods",
-      category: "Training"
+      title: "Achievement Recognition",
+      description: "Certificate presentation ceremony recognizing student achievements",
+      category: "Community",
+      image: "/lovable-uploads/ed125601-0018-4c18-b1f0-258fb2f9548f.png"
     }
   ];
 
-  const categories = ["All", "Libraries", "Summer Camps", "Digital Literacy", "Community", "Training"];
+  const categories = ["All", "Summer Camps", "Educational Programs", "Community"];
+
+  const filteredItems = activeCategory === "All" 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
@@ -62,8 +69,9 @@ const Gallery = () => {
             {categories.map((category, index) => (
               <button
                 key={index}
+                onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  index === 0 
+                  activeCategory === category
                     ? 'bg-primary text-white' 
                     : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary'
                 }`}
@@ -74,15 +82,14 @@ const Gallery = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleryItems.map((item, index) => (
+            {filteredItems.map((item, index) => (
               <Card key={index} className="bg-white hover:shadow-lg transition-shadow overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">📸</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Photo Coming Soon</p>
-                  </div>
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-2">
