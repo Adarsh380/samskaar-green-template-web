@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -15,7 +14,7 @@ const Gallery = () => {
       image: "/lovable-uploads/bd130b47-4b42-482d-a313-f9f33cdaf89b.png"
     },
     {
-      title: "Student Interaction Session",
+      title: "Student Interaction Session", 
       description: "Volunteers conducting educational activities with students in classroom setting",
       category: "Summer Camps",
       image: "/lovable-uploads/fa949e39-2ff8-44a9-8403-5b1f4e3d05a2.png"
@@ -37,10 +36,16 @@ const Gallery = () => {
       description: "Certificate presentation ceremony recognizing student achievements",
       category: "Community",
       image: "/lovable-uploads/ed125601-0018-4c18-b1f0-258fb2f9548f.png"
+    },
+    {
+      title: "Book Collection Drive",
+      description: "Community book donation collection boxes set up for our literacy initiative",
+      category: "Book Drive",
+      image: "/lovable-uploads/28d7e233-addb-4bfe-a3b7-78954beb6f4c.png"
     }
   ];
 
-  const categories = ["All", "Summer Camps", "Educational Programs", "Community"];
+  const categories = ["All", "Summer Camps", "Educational Programs", "Community", "Book Drive"];
 
   const filteredItems = activeCategory === "All" 
     ? galleryItems 
