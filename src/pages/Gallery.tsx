@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,6 +19,12 @@ const Gallery = () => {
       description: "Volunteers conducting educational activities with students in classroom setting",
       category: "Summer Camps",
       image: "/lovable-uploads/fa949e39-2ff8-44a9-8403-5b1f4e3d05a2.png"
+    },
+    {
+      title: "Outdoor Summer Camp Activity",
+      description: "Children participating in outdoor group activities and games during summer camp",
+      category: "Summer Camps",
+      image: "/lovable-uploads/eb4e7d38-718c-4906-a17b-5e049d7e8aaf.png"
     },
     {
       title: "Classroom Learning Environment",
