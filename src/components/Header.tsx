@@ -1,6 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import { Instagram } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -79,12 +79,22 @@ const Header = () => {
             </Link>
           </nav>
           
-          <Button 
-            className="bg-primary hover:bg-primary/90"
-            onClick={() => window.open('https://github.com/Adarsh380/Pustak-Dhaan', '_blank')}
-          >
-            Get Involved
-          </Button>
+          <div className="flex items-center space-x-3">
+            <Button 
+              variant="outline"
+              size="sm"
+              onClick={() => window.open('https://www.instagram.com/samskaar.foundation/', '_blank')}
+              className="hidden md:flex"
+            >
+              <Instagram className="w-4 h-4" />
+            </Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => window.open('https://github.com/Adarsh380/Pustak-Dhaan', '_blank')}
+            >
+              Get Involved
+            </Button>
+          </div>
         </div>
       </div>
     </header>
