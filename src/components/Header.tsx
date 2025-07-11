@@ -18,10 +18,12 @@ const Header = () => {
     <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-              S
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/0bdd1176-1d26-4038-a01a-4dae2dff5164.png" 
+              alt="Samskaar Foundation Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-primary">Samskaar Foundation</h1>
               <p className="text-xs text-muted-foreground">Transforming Education</p>
