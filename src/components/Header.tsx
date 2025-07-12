@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram } from "lucide-react";
@@ -6,13 +7,6 @@ const Header = () => {
   const location = useLocation();
   
   const isActive = (path: string) => location.pathname === path;
-  
-  const scrollToServices = () => {
-    const servicesSection = document.querySelector('#services');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   
   return (
     <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
@@ -47,12 +41,12 @@ const Header = () => {
             >
               About
             </Link>
-            <button 
-              onClick={scrollToServices}
+            <Link 
+              to="/#services" 
               className="transition-colors text-foreground hover:text-primary"
             >
               Services
-            </button>
+            </Link>
             <Link 
               to="/impact" 
               className={`transition-colors ${
@@ -87,12 +81,6 @@ const Header = () => {
               className="hidden md:flex"
             >
               <Instagram className="w-4 h-4" />
-            </Button>
-            <Button 
-              className="bg-primary hover:bg-primary/90"
-              onClick={() => window.open('https://github.com/Adarsh380/Pustak-Dhaan', '_blank')}
-            >
-              Get Involved
             </Button>
           </div>
         </div>
