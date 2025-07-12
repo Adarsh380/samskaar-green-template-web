@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Send } from "lucide-react";
 
 const Contact = () => {
@@ -26,6 +27,38 @@ const Contact = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
+            
+            {/* Founder Section */}
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Meet Our Founder</h2>
+              
+              <Card className="bg-white shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <Avatar className="w-24 h-24 flex-shrink-0">
+                      <AvatarImage 
+                        src="/lovable-uploads/27eda1c2-615d-4e44-82ac-d78f063f1a1e.png" 
+                        alt="Adarsh Vikas" 
+                      />
+                      <AvatarFallback>AV</AvatarFallback>
+                    </Avatar>
+                    
+                    <div className="text-center md:text-left">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">Adarsh Vikas</h3>
+                      <p className="text-primary font-medium mb-4">Founder & Director</p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Adarsh is an IBDP Year 2 student with a deep passion for computer science and business. 
+                        Driven by a vision to make education equitable for all, he founded Samskaar Foundation 
+                        to bridge the educational gap between government and private schools. His commitment to 
+                        social impact and educational reform continues to drive the foundation's mission of 
+                        transforming rural education and empowering underserved communities.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
             <div className="mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-8">Get in Touch</h2>
               
