@@ -1,10 +1,10 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Heart, Star, Users, Globe, Target } from "lucide-react";
+import { BookOpen, Heart, Star, Users, Globe, Target, Monitor, Zap } from "lucide-react";
 
 const ServicesSection = () => {
-  const features = [
+  const pustakDhaanFeatures = [
     {
       icon: BookOpen,
       title: "Easy Book Donation",
@@ -27,22 +27,45 @@ const ServicesSection = () => {
     }
   ];
 
+  const fundraiserFeatures = [
+    {
+      icon: Monitor,
+      title: "Digital Access",
+      description: "Providing solar TVs to give tribal students access to educational content"
+    },
+    {
+      icon: Zap,
+      title: "Solar Powered",
+      description: "Each solar TV costs ₹45,000 and will be delivered personally to these schools"
+    },
+    {
+      icon: Target,
+      title: "Direct Impact",
+      description: "Goal: ₹5,85 lakhs to enhance digital learning for more than 450 tribal students"
+    },
+    {
+      icon: Users,
+      title: "Community Focus",
+      description: "Supporting tribal students in Kotturkonda district, Telangana"
+    }
+  ];
+
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Service
+            Our Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Pustak Dhaan - A revolutionary book donation platform connecting generous donors 
-            with rural schools and libraries, making quality education accessible to every child.
+            Empowering education through innovative solutions and community-driven initiatives 
+            that bridge the gap between privileged and underserved students.
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          {/* Main Service Card */}
-          <Card className="border-primary shadow-xl mb-12">
+        <div className="max-w-6xl mx-auto space-y-12">
+          {/* Pustak Dhaan Service */}
+          <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-6">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-6">
                 <BookOpen className="w-8 h-8" />
@@ -58,7 +81,7 @@ const ServicesSection = () => {
             </CardHeader>
             <CardContent className="pt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                {features.map((feature, index) => (
+                {pustakDhaanFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-muted/50">
                     <div className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0">
                       <feature.icon className="w-5 h-5" />
@@ -83,6 +106,49 @@ const ServicesSection = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Digital Education Fundraiser Service */}
+          <Card className="border-secondary shadow-xl">
+            <CardHeader className="text-center pb-6">
+              <div className="w-16 h-16 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center mx-auto mb-6">
+                <Monitor className="w-8 h-8" />
+              </div>
+              <CardTitle className="text-2xl md:text-3xl mb-4">
+                Digital Education Fundraiser
+              </CardTitle>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Igniting digital learning for tribal students in Telangana. We're raising funds to provide 
+                solar-powered TVs that deliver educational content to remote tribal schools, ensuring 
+                no student misses out on quality digital education.
+              </p>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {fundraiserFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-muted/50">
+                    <div className="w-10 h-10 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                      <feature.icon className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
+                      <p className="text-sm text-muted-foreground">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="text-center">
+                <Button 
+                  size="lg"
+                  className="bg-secondary hover:bg-secondary/90"
+                  onClick={() => window.open('https://www.ketto.org/fundraiser/ignite-digital-learning-of-tribal-students', '_blank')}
+                >
+                  <Heart className="w-5 h-5 mr-2" />
+                  Support Our Fundraiser
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
           
           {/* Call to Action */}
           <div className="bg-primary/5 rounded-2xl p-8 md:p-12 text-center">
@@ -90,23 +156,24 @@ const ServicesSection = () => {
               Ready to Make a Difference?
             </h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Join thousands of donors who are transforming rural education through book donations. 
-              Every book you donate brings a child one step closer to a brighter future.
+              Join our mission to transform education for underserved communities. Whether through 
+              book donations or supporting digital learning initiatives, every contribution counts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg"
                 onClick={() => window.open('http://localhost:5173/', '_blank')}
               >
-                <Heart className="w-5 h-5 mr-2" />
-                Start Donating Books
+                <BookOpen className="w-5 h-5 mr-2" />
+                Donate Books
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => window.open('https://www.ketto.org/fundraiser/ignite-digital-learning-of-tribal-students', '_blank')}
               >
-                Learn More
+                <Monitor className="w-5 h-5 mr-2" />
+                Fund Digital Learning
               </Button>
             </div>
           </div>
