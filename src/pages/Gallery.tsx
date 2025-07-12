@@ -1,4 +1,5 @@
 
+
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -25,6 +26,66 @@ const Gallery = () => {
       description: "Children participating in outdoor group activities and games during summer camp",
       category: "Summer Camps",
       image: "/lovable-uploads/eb4e7d38-718c-4906-a17b-5e049d7e8aaf.png"
+    },
+    {
+      title: "Certificate Presentation Ceremony",
+      description: "Students receiving certificates of achievement in classroom setting",
+      category: "Summer Camps",
+      image: "/lovable-uploads/83e8b645-7c0f-4c8b-858e-06ee66eda41c.png"
+    },
+    {
+      title: "Educational Program Session",
+      description: "Volunteers and students participating in educational program activities",
+      category: "Summer Camps",
+      image: "/lovable-uploads/3b22770d-a9e7-408d-928e-7f2db64b7072.png"
+    },
+    {
+      title: "Outdoor Group Activity",
+      description: "Children forming chains and participating in team building exercises",
+      category: "Summer Camps",
+      image: "/lovable-uploads/205d5f0c-6079-436a-9b14-c3ee95124b57.png"
+    },
+    {
+      title: "Achievement Recognition Event",
+      description: "Group photo with students holding their certificates of completion",
+      category: "Summer Camps",
+      image: "/lovable-uploads/1fc09e82-87ab-4b2e-86a4-fcd8c8e28b69.png"
+    },
+    {
+      title: "Individual Achievement Recognition",
+      description: "Student receiving certificate of appreciation from program coordinator",
+      category: "Summer Camps",
+      image: "/lovable-uploads/cb41272c-3e4c-4884-906d-9e5bda5ef36a.png"
+    },
+    {
+      title: "Academic Recognition Ceremony",
+      description: "Certificate presentation acknowledging student participation and achievement",
+      category: "Summer Camps",
+      image: "/lovable-uploads/ee4c7bae-71e2-454e-8a65-4ff92ece6d42.png"
+    },
+    {
+      title: "Program Completion Certificate",
+      description: "Student proudly receiving completion certificate from education program",
+      category: "Summer Camps",
+      image: "/lovable-uploads/5793e3b5-4bb8-4f19-8046-1400354ee1fb.png"
+    },
+    {
+      title: "Educational Excellence Recognition",
+      description: "Certificate presentation ceremony recognizing outstanding student performance",
+      category: "Summer Camps",
+      image: "/lovable-uploads/baae805d-74b7-43ed-9876-7db4693b568f.png"
+    },
+    {
+      title: "Interactive Learning Session",
+      description: "Students engaged in collaborative learning activities with volunteer educators",
+      category: "Educational Programs",
+      image: "/lovable-uploads/cafbd77a-ed59-4c19-b74b-f3e8ad79ecd5.png"
+    },
+    {
+      title: "Student Achievement Award",
+      description: "Young student receiving certificate of achievement for academic excellence",
+      category: "Summer Camps",
+      image: "/lovable-uploads/c538c174-87ea-45ee-96d6-97208e9a7c5d.png"
     },
     {
       title: "Classroom Learning Environment",
@@ -136,3 +197,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
