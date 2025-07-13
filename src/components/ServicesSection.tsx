@@ -108,9 +108,9 @@ const ServicesSection = () => {
           </Card>
 
           {/* Digital Education Fundraiser Service */}
-          <Card className="border-secondary shadow-xl">
+          <Card className="border-primary shadow-xl">
             <CardHeader className="text-center pb-6">
-              <div className="w-16 h-16 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-6">
                 <Monitor className="w-8 h-8" />
               </div>
               <CardTitle className="text-2xl md:text-3xl mb-4">
@@ -126,7 +126,7 @@ const ServicesSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 {fundraiserFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-4 p-4 rounded-lg bg-muted/50">
-                    <div className="w-10 h-10 bg-secondary/10 text-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0">
                       <feature.icon className="w-5 h-5" />
                     </div>
                     <div>
@@ -140,7 +140,7 @@ const ServicesSection = () => {
               <div className="text-center">
                 <Button 
                   size="lg"
-                  className="bg-secondary hover:bg-secondary/90"
+                  className="bg-primary hover:bg-primary/90"
                   onClick={() => window.open('https://www.ketto.org/fundraiser/ignite-digital-learning-of-tribal-students', '_blank')}
                 >
                   <Heart className="w-5 h-5 mr-2" />
