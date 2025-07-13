@@ -35,7 +35,7 @@ const Impact = () => {
       title: "Government School Libraries",
       location: "Hyderabad, Telangana",
       date: "2022",
-      students: "300+",
+      students: "10 Libraries",
       description: "In collaboration with Joy of Reading NGO, established fully equipped libraries in 10 government schools. Started with collecting over 1000 books from our community, creating dedicated reading spaces that fostered academic excellence.",
       achievements: ["10 libraries established", "1000+ books collected", "Community collaboration", "Partnership with Joy of Reading NGO"]
     },
@@ -43,9 +43,9 @@ const Impact = () => {
       title: "Summer Educational Camps",
       location: "ZPHS Gachibowli, Telangana",
       date: "Summer 2023",
-      students: "450+",
-      description: "Designed and implemented holistic summer camps with trained student volunteers. Programs combined reading practices, STEM education, and health & fitness, creating an engaging learning environment during school holidays.",
-      achievements: ["Holistic curriculum design", "Student volunteer training", "STEM & fitness integration", "Overwhelming participation"]
+      students: "50 Students",
+      description: "Designed and implemented holistic summer camps with trained student volunteers. Programs combined reading practices, STEM education, and health & fitness, creating an engaging learning environment during school holidays for government middle school students.",
+      achievements: ["Holistic curriculum design", "Student volunteer training", "STEM & fitness integration", "50 government middle school students"]
     },
     {
       title: "Solar-Powered Digital Education",
@@ -138,7 +138,7 @@ const Impact = () => {
                         </div>
                         <div className="flex items-center text-sm text-muted-foreground">
                           <Users className="w-4 h-4 mr-2 text-primary" />
-                          {project.students} Students
+                          {project.students}
                         </div>
                         <div className="flex items-center text-sm text-muted-foreground">
                           <BookOpen className="w-4 h-4 mr-2 text-primary" />
