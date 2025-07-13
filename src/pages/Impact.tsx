@@ -43,9 +43,9 @@ const Impact = () => {
       title: "Summer Educational Camps",
       location: "ZPHS Gachibowli, Telangana",
       date: "Summer 2023",
-      students: "50 Students",
+      students: "20 Students",
       description: "Designed and implemented holistic summer camps with trained student volunteers. Programs combined reading practices, STEM education, and health & fitness, creating an engaging learning environment during school holidays for government middle school students.",
-      achievements: ["Holistic curriculum design", "Student volunteer training", "STEM & fitness integration", "50 government middle school students"]
+      achievements: ["Holistic curriculum design", "Student volunteer training", "STEM & fitness integration", "20 government middle school students"]
     },
     {
       title: "Solar-Powered Digital Education",
