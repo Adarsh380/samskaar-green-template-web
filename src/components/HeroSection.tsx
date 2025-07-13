@@ -1,8 +1,22 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Users, BookOpen } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+  const handleSupportMission = () => {
+    navigate('/contact');
+  };
+
   return (
     <section id="home" className="hero-gradient py-20 md:py-32">
       <div className="container mx-auto px-4">
@@ -25,11 +39,11 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8" onClick={handleSupportMission}>
               Support Our Mission
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5" onClick={scrollToServices}>
               Learn More
             </Button>
           </div>
