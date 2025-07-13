@@ -2,6 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Sun, Monitor, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ProgramsSection = () => {
   const programs = [
@@ -76,13 +77,12 @@ const ProgramsSection = () => {
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Every contribution helps us reach more students and create more opportunities for quality education in rural areas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Volunteer With Us
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5">
-                Learn More
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/contact">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  Volunteer With Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -48,12 +48,6 @@ const Header = () => {
             >
               About
             </Link>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="transition-colors text-foreground hover:text-primary"
-            >
-              Services
-            </button>
             <Link 
               to="/impact" 
               className={`transition-colors ${
