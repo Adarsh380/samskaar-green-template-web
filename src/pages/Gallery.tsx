@@ -1,71 +1,123 @@
 
+
+import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Gallery = () => {
-  const images = [
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const galleryItems = [
     {
-      src: "/lovable-uploads/1fc09e82-87ab-4b2e-86a4-fcd8c8e28b69.png",
-      alt: "Library setup at government school",
-      category: "Libraries"
+      title: "Summer Camp Activities",
+      description: "Students engaged in interactive learning sessions during our summer camp program",
+      category: "Summer Camps",
+      image: "/lovable-uploads/bd130b47-4b42-482d-a313-f9f33cdaf89b.png"
     },
     {
-      src: "/lovable-uploads/0bdd1176-1d26-4038-a01a-4dae2dff5164.png",
-      alt: "Students participating in summer camp activities",
-      category: "Summer Camps"
+      title: "Student Interaction Session", 
+      description: "Volunteers conducting educational activities with students in classroom setting",
+      category: "Summer Camps",
+      image: "/lovable-uploads/fa949e39-2ff8-44a9-8403-5b1f4e3d05a2.png"
     },
     {
-      src: "/lovable-uploads/5793e3b5-4bb8-4f19-8046-1400354ee1fb.png",
-      alt: "Digital literacy session with Solar TV",
-      category: "Digital Education"
+      title: "Outdoor Summer Camp Activity",
+      description: "Children participating in outdoor group activities and games during summer camp",
+      category: "Summer Camps",
+      image: "/lovable-uploads/eb4e7d38-718c-4906-a17b-5e049d7e8aaf.png"
     },
     {
-      src: "/lovable-uploads/28d7e233-addb-4bfe-a3b7-78954beb6f4c.png",
-      alt: "Community engagement and book distribution",
-      category: "Community Outreach"
+      title: "Certificate Presentation Ceremony",
+      description: "Students receiving certificates of achievement in classroom setting",
+      category: "Summer Camps",
+      image: "/lovable-uploads/83e8b645-7c0f-4c8b-858e-06ee66eda41c.png"
     },
     {
-      src: "/lovable-uploads/83e8b645-7c0f-4c8b-858e-06ee66eda41c.png",
-      alt: "Student volunteers conducting educational activities",
-      category: "Volunteer Activities"
+      title: "Educational Program Session",
+      description: "Volunteers and students participating in educational program activities",
+      category: "Summer Camps",
+      image: "/lovable-uploads/3b22770d-a9e7-408d-928e-7f2db64b7072.png"
     },
     {
-      src: "/lovable-uploads/3b22770d-a9e7-408d-928e-7f2db64b7072.png",
-      alt: "Reading session in newly established library",
-      category: "Libraries"
+      title: "Outdoor Group Activity",
+      description: "Children forming chains and participating in team building exercises",
+      category: "Summer Camps",
+      image: "/lovable-uploads/205d5f0c-6079-436a-9b14-c3ee95124b57.png"
     },
     {
-      src: "/lovable-uploads/205d5f0c-6079-436a-9b14-c3ee95124b57.png",
-      alt: "STEM education activities during summer camp",
-      category: "Summer Camps"
+      title: "Achievement Recognition Event",
+      description: "Group photo with students holding their certificates of completion",
+      category: "Summer Camps",
+      image: "/lovable-uploads/1fc09e82-87ab-4b2e-86a4-fcd8c8e28b69.png"
     },
     {
-      src: "/lovable-uploads/624abae4-7db3-4328-ac3f-b850c3fe1a90.png",
-      alt: "Solar TV installation in tribal hamlet",
-      category: "Digital Education"
+      title: "Individual Achievement Recognition",
+      description: "Student receiving certificate of appreciation from program coordinator",
+      category: "Summer Camps",
+      image: "/lovable-uploads/cb41272c-3e4c-4884-906d-9e5bda5ef36a.png"
     },
     {
-      src: "/lovable-uploads/bd130b47-4b42-482d-a313-f9f33cdaf89b.png",
-      alt: "Health and fitness activities with students",
-      category: "Summer Camps"
+      title: "Academic Recognition Ceremony",
+      description: "Certificate presentation acknowledging student participation and achievement",
+      category: "Summer Camps",
+      image: "/lovable-uploads/ee4c7bae-71e2-454e-8a65-4ff92ece6d42.png"
     },
     {
-      src: "/lovable-uploads/baae805d-74b7-43ed-9876-7db4693b568f.png",
-      alt: "Book collection and sorting for libraries",
-      category: "Community Outreach"
+      title: "Program Completion Certificate",
+      description: "Student proudly receiving completion certificate from education program",
+      category: "Summer Camps",
+      image: "/lovable-uploads/5793e3b5-4bb8-4f19-8046-1400354ee1fb.png"
     },
     {
-      src: "/lovable-uploads/c538c174-87ea-45ee-96d6-97208e9a7c5d.png",
-      alt: "Students engaged in digital learning",
-      category: "Digital Education"
+      title: "Educational Excellence Recognition",
+      description: "Certificate presentation ceremony recognizing outstanding student performance",
+      category: "Summer Camps",
+      image: "/lovable-uploads/baae805d-74b7-43ed-9876-7db4693b568f.png"
     },
     {
-      src: "/lovable-uploads/c82d35fa-f4e2-450a-a652-ab9880414857.png",
-      alt: "Educational games and activities",
-      category: "Summer Camps"
+      title: "Interactive Learning Session",
+      description: "Students engaged in collaborative learning activities with volunteer educators",
+      category: "Educational Programs",
+      image: "/lovable-uploads/cafbd77a-ed59-4c19-b74b-f3e8ad79ecd5.png"
+    },
+    {
+      title: "Student Achievement Award",
+      description: "Young student receiving certificate of achievement for academic excellence",
+      category: "Summer Camps",
+      image: "/lovable-uploads/c538c174-87ea-45ee-96d6-97208e9a7c5d.png"
+    },
+    {
+      title: "Classroom Learning Environment",
+      description: "Students participating in focused learning activities with environmental awareness",
+      category: "Educational Programs",
+      image: "/lovable-uploads/c82d35fa-f4e2-450a-a652-ab9880414857.png"
+    },
+    {
+      title: "Summer Camp Group Session",
+      description: "Community volunteers engaging with students in summer educational programs",
+      category: "Summer Camps",
+      image: "/lovable-uploads/624abae4-7db3-4328-ac3f-b850c3fe1a90.png"
+    },
+    {
+      title: "Achievement Recognition",
+      description: "Certificate presentation ceremony recognizing student achievements",
+      category: "Community",
+      image: "/lovable-uploads/ed125601-0018-4c18-b1f0-258fb2f9548f.png"
+    },
+    {
+      title: "Book Collection Drive",
+      description: "Community book donation collection boxes set up for our literacy initiative",
+      category: "Book Drive",
+      image: "/lovable-uploads/28d7e233-addb-4bfe-a3b7-78954beb6f4c.png"
     }
   ];
+
+  const categories = ["All", "Summer Camps", "Educational Programs", "Community", "Book Drive"];
+
+  const filteredItems = activeCategory === "All" 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-background">
@@ -75,11 +127,10 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Journey in Pictures
+              Gallery
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Witness the transformation happening in government schools and tribal communities across Telangana. 
-              These moments capture the essence of our mission - bringing quality education to every child.
+              Capturing moments of transformation and joy in our educational initiatives.
             </p>
           </div>
         </div>
@@ -87,64 +138,54 @@ const Gallery = () => {
 
       <section className="py-20">
         <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {categories.map((category, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveCategory(category)}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  activeCategory === category
+                    ? 'bg-primary text-white' 
+                    : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {images.map((image, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            {filteredItems.map((item, index) => (
+              <Card key={index} className="bg-white hover:shadow-lg transition-shadow overflow-hidden">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="text-white text-sm font-medium px-3 py-1 bg-black/50 rounded-full">
-                      {image.category}
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
+                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                      {item.category}
                     </span>
                   </div>
-                </div>
-                <CardContent className="p-4">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{image.alt}</p>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section className="py-20 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Stories Behind the Pictures
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Each photograph tells a story of hope, determination, and transformation. From the joy of 
-              receiving new books to the excitement of learning through Solar TVs, these images capture 
-              the human impact of our educational initiatives.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">10</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Government Schools</h3>
-                <p className="text-sm text-muted-foreground">Libraries established with community support</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">13</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Solar TVs</h3>
-                <p className="text-sm text-muted-foreground">Bringing digital education to tribal areas</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-primary">450+</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Students Impacted</h3>
-                <p className="text-sm text-muted-foreground">Lives transformed through education</p>
-              </div>
+          <div className="mt-16 text-center">
+            <div className="bg-primary/5 rounded-2xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Share Your Story</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Have photos from our programs or events? We'd love to feature them in our gallery to showcase the impact of our work together.
+              </p>
+              <button className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors">
+                Submit Photos
+              </button>
             </div>
           </div>
         </div>
@@ -156,3 +197,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
