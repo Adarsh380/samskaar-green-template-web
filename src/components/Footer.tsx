@@ -1,7 +1,15 @@
 
-import { Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-primary/5 py-16">
       <div className="container mx-auto px-4">
@@ -29,11 +37,31 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
-              <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#programs" className="text-muted-foreground hover:text-primary transition-colors">Programs</a></li>
-              <li><a href="#impact" className="text-muted-foreground hover:text-primary transition-colors">Our Impact</a></li>
-              <li><a href="#donate" className="text-muted-foreground hover:text-primary transition-colors">Donate</a></li>
+              <li>
+                <Link to="/" onClick={() => scrollToSection('home')} className="text-muted-foreground hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/" onClick={() => scrollToSection('services')} className="text-muted-foreground hover:text-primary transition-colors">
+                  Programs
+                </Link>
+              </li>
+              <li>
+                <Link to="/impact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Our Impact
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -43,14 +71,6 @@ const Footer = () => {
               <li className="flex items-center text-muted-foreground">
                 <MapPin className="w-4 h-4 mr-3 text-primary" />
                 <span className="text-sm">Telangana, India</span>
-              </li>
-              <li className="flex items-center text-muted-foreground">
-                <Mail className="w-4 h-4 mr-3 text-primary" />
-                <span className="text-sm">info@samskaarfoundation.org</span>
-              </li>
-              <li className="flex items-center text-muted-foreground">
-                <Phone className="w-4 h-4 mr-3 text-primary" />
-                <span className="text-sm">+91 XXXXX XXXXX</span>
               </li>
             </ul>
           </div>
