@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -78,7 +77,7 @@ const Gallery = () => {
     {
       title: "Interactive Learning Session",
       description: "Students engaged in collaborative learning activities with volunteer educators",
-      category: "Educational Programs",
+      category: "Summer Camps",
       image: "/lovable-uploads/cafbd77a-ed59-4c19-b74b-f3e8ad79ecd5.png"
     },
     {
@@ -90,7 +89,7 @@ const Gallery = () => {
     {
       title: "Classroom Learning Environment",
       description: "Students participating in focused learning activities with environmental awareness",
-      category: "Educational Programs",
+      category: "Summer Camps",
       image: "/lovable-uploads/c82d35fa-f4e2-450a-a652-ab9880414857.png"
     },
     {
@@ -102,7 +101,7 @@ const Gallery = () => {
     {
       title: "Achievement Recognition",
       description: "Certificate presentation ceremony recognizing student achievements",
-      category: "Community",
+      category: "Summer Camps",
       image: "/lovable-uploads/ed125601-0018-4c18-b1f0-258fb2f9548f.png"
     },
     {
@@ -113,7 +112,7 @@ const Gallery = () => {
     }
   ];
 
-  const categories = ["All", "Summer Camps", "Educational Programs", "Community", "Book Drive"];
+  const categories = ["All", "Summer Camps", "Book Drive"];
 
   const filteredItems = activeCategory === "All" 
     ? galleryItems 
@@ -176,18 +175,6 @@ const Gallery = () => {
               </Card>
             ))}
           </div>
-
-          <div className="mt-16 text-center">
-            <div className="bg-primary/5 rounded-2xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Share Your Story</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Have photos from our programs or events? We'd love to feature them in our gallery to showcase the impact of our work together.
-              </p>
-              <button className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition-colors">
-                Submit Photos
-              </button>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -197,4 +184,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
