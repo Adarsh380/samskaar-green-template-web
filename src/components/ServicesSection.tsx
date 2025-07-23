@@ -98,7 +98,7 @@ const ServicesSection = () => {
                 <Button 
                   size="lg"
                   className="bg-primary hover:bg-primary/90"
-                  onClick={() => window.open('http://localhost:5173/', '_blank')}
+                  onClick={() => window.open('https://pustakdhaan.vercel.app/', '_blank')}
                 >
                   <Star className="w-5 h-5 mr-2" />
                   Explore Pustak Dhaan
