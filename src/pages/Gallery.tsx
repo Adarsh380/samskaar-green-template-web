@@ -156,6 +156,24 @@ const Gallery = () => {
       description: "Students proudly supporting book collection drive for community libraries",
       category: "Book Drive",
       image: "/lovable-uploads/45aa99aa-2639-40fb-a9a7-d8b92e72a826.png"
+    },
+    {
+      title: "School Library Learning Session",
+      description: "Interactive learning session in the newly established library room at MPS Kondapur",
+      category: "Library Programs",
+      image: "/lovable-uploads/8d9d7dab-af53-450c-82b9-80e79ed62b01.png"
+    },
+    {
+      title: "Book Donation Collection Box",
+      description: "Community book collection initiative box for expanding rural library resources",
+      category: "Book Drive",
+      image: "/lovable-uploads/ff5220f3-37c3-4187-8998-df1509de5e21.png"
+    },
+    {
+      title: "Educational Achievement Recognition",
+      description: "Official recognition ceremony acknowledging contributions to tribal education initiatives",
+      category: "Recognition",
+      image: "/lovable-uploads/38f486b8-25e4-479f-9d73-771e31e00445.png"
     }
   ];
 
