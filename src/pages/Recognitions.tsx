@@ -26,7 +26,7 @@ const Recognitions = () => {
       icon: Newspaper,
       color: "text-blue-600",
       bgColor: "bg-blue-50",
-      image: "/lovable-uploads/52e9f8a9-98a9-4177-ae03-84acb172ed1c.png"
+      image: "/lovable-uploads/e580c2dd-42e7-40af-91e6-e0d541c8757e.png"
     },
     {
       title: "International Media Coverage",
