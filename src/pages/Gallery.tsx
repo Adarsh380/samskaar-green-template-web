@@ -109,6 +109,54 @@ const Gallery = () => {
       description: "Community book donation collection boxes set up for our literacy initiative",
       category: "Book Drive",
       image: "/lovable-uploads/28d7e233-addb-4bfe-a3b7-78954beb6f4c.png"
+    },
+    {
+      title: "Volunteer Teaching Session",
+      description: "Educational volunteers conducting interactive learning activities with tribal students",
+      category: "Summer Camps",
+      image: "/lovable-uploads/3a3c952f-c92b-4b56-b2ac-1f71442bea50.png"
+    },
+    {
+      title: "Environmental Awareness Classroom",
+      description: "Students participating in environmental education with 'Save Trees' awareness campaign",
+      category: "Summer Camps", 
+      image: "/lovable-uploads/3d9ee58c-67f6-43f6-b566-ea7a7025dde5.png"
+    },
+    {
+      title: "One-on-One Learning Support",
+      description: "Volunteer providing personalized educational assistance to students",
+      category: "Summer Camps",
+      image: "/lovable-uploads/2af1f58e-5cc1-4b4d-9030-3dc3baa7a7e4.png"
+    },
+    {
+      title: "Collaborative Learning Activity",
+      description: "Students working together on educational activities with peer support",
+      category: "Summer Camps",
+      image: "/lovable-uploads/87a3b434-0e3e-4452-a68a-fa98e0bd1bf7.png"
+    },
+    {
+      title: "Interactive Educational Demonstration",
+      description: "Students gathered for hands-on learning demonstration by volunteers",
+      category: "Summer Camps",
+      image: "/lovable-uploads/74605a97-2c57-469a-8be9-4720facaa787.png"
+    },
+    {
+      title: "Summer Program Certificate Ceremony",
+      description: "Students and volunteers celebrating successful completion of summer educational program",
+      category: "Summer Camps",
+      image: "/lovable-uploads/878be833-b7d3-4858-bb22-fdab63893718.png"
+    },
+    {
+      title: "Community Book Donation Initiative",
+      description: "Book collection drive box supporting literacy programs in rural communities",
+      category: "Book Drive",
+      image: "/lovable-uploads/aa9492a6-64b6-43ae-9d05-b23f5c878e94.png"
+    },
+    {
+      title: "Young Literacy Champions",
+      description: "Students proudly supporting book collection drive for community libraries",
+      category: "Book Drive",
+      image: "/lovable-uploads/45aa99aa-2639-40fb-a9a7-d8b92e72a826.png"
     }
   ];
 
