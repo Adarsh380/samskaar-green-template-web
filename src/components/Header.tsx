@@ -65,6 +65,14 @@ const Header = () => {
               Gallery
             </Link>
             <Link 
+              to="/recognitions" 
+              className={`transition-colors ${
+                isActive('/recognitions') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Recognitions
+            </Link>
+            <Link 
               to="/contact" 
               className={`transition-colors ${
                 isActive('/contact') ? 'text-primary font-medium' : 'text-foreground hover:text-primary'
