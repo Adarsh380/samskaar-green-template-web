@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Gallery = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
 
   const galleryItems = [
     {
@@ -160,12 +159,6 @@ const Gallery = () => {
     }
   ];
 
-  const categories = ["All", "Summer Camps", "Book Drive"];
-
-  const filteredItems = activeCategory === "All" 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -185,24 +178,9 @@ const Gallery = () => {
 
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  activeCategory === category
-                    ? 'bg-primary text-white' 
-                    : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredItems.map((item, index) => (
+            {galleryItems.map((item, index) => (
               <Card key={index} className="bg-white hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -212,12 +190,7 @@ const Gallery = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-                      {item.category}
-                    </span>
-                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
