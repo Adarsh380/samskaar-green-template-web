@@ -10,12 +10,13 @@ const Recognitions = () => {
     {
       title: "Youth Changemaker Award",
       organization: "Badari-Kothagudam District Authorities",
-      description: "Recognized for outstanding contributions to tribal education and digital literacy initiatives in rural communities of Telangana.",
+      description: "Recognized for outstanding contributions to tribal education and digital literacy initiatives in remote tribal hamlets, receiving the Champions of Change award for addressing critical issues of literacy in underserved communities.",
       type: "Award",
       year: "2024",
       icon: Award,
       color: "text-yellow-600",
-      bgColor: "bg-yellow-50"
+      bgColor: "bg-yellow-50",
+      image: "/lovable-uploads/f6bad3ba-c0ec-4eb2-b8c4-f11a0a9f4d9e.png"
     },
     {
       title: "City's Angels Award",
