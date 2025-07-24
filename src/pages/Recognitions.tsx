@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Newspaper, Globe } from "lucide-react";
+import { Award, Newspaper, Globe, Trophy } from "lucide-react";
 
 const Recognitions = () => {
   const recognitions = [
@@ -28,6 +28,18 @@ const Recognitions = () => {
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       image: "/lovable-uploads/e580c2dd-42e7-40af-91e6-e0d541c8757e.png"
+    },
+    {
+      title: "IB Global Youth Action Fund Awardee",
+      organization: "International Baccalaureate Organization",
+      description: "Awarded a $2,500 grant for the 'Ignite Digital Learning of Tribal Students' project. Selected as one of 100 projects from over 1,100 submissions worldwide, recognizing innovative approaches to digital literacy in underserved communities.",
+      type: "International Grant",
+      year: "2024",
+      icon: Trophy,
+      color: "text-purple-600",
+      bgColor: "bg-purple-50",
+      link: "https://www.ibo.org/festival-of-hope/youth-in-action/ignite-digital-learning-of-tribal-students?contentId=204688",
+      linkText: "View Project Details"
     },
     {
       title: "International Media Coverage",
