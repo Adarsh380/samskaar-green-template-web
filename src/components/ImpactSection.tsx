@@ -6,7 +6,7 @@ const ImpactSection = () => {
   const impacts = [
     {
       icon: Users,
-      number: "450+",
+      number: "1000+",
       title: "Students Transformed",
       description: "Lives changed through our educational programs",
       color: "text-green-600"
@@ -35,8 +35,13 @@ const ImpactSection = () => {
   ];
 
   return (
-    <section id="impact" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="impact" className="relative py-20 bg-muted/30 overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/lovable-uploads/d8bbb5d0-c938-4247-82b7-04cfe3b1b7b1.png)' }}
+      />
+      <div className="absolute inset-0 bg-white/80" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Impact So Far

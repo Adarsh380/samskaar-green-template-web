@@ -18,13 +18,8 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative py-20 md:py-32 overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/lovable-uploads/d8bbb5d0-c938-4247-82b7-04cfe3b1b7b1.png)' }}
-      />
-      <div className="absolute inset-0 bg-black/20" />
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="home" className="py-20 md:py-32">
+      <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="inline-flex items-center bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-medium">
@@ -58,7 +53,7 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-primary mb-1">450+</div>
+              <div className="text-3xl font-bold text-primary mb-1">1000+</div>
               <div className="text-sm text-muted-foreground">Students Impacted</div>
             </div>
             
