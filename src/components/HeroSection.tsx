@@ -53,32 +53,6 @@ const HeroSection = () => {
               Learn More
             </Button>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Users className="w-8 h-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-1">1000+</div>
-              <div className="text-sm text-muted-foreground">Students Impacted</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                <BookOpen className="w-8 h-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-1">10</div>
-              <div className="text-sm text-muted-foreground">Libraries Established</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Heart className="w-8 h-8 text-primary" />
-              </div>
-              <div className="text-3xl font-bold text-primary mb-1">₹5.85L</div>
-              <div className="text-sm text-muted-foreground">Funds Raised</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
