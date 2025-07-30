@@ -18,13 +18,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="py-20 md:py-32 mb-8 relative">
+    <section id="home" className="py-20 md:py-32 mb-8 relative overflow-hidden">
       <div 
-        className="absolute inset-0 w-full bg-center bg-no-repeat bg-contain opacity-5 pointer-events-none"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('/lovable-uploads/3a3c952f-c92b-4b56-b2ac-1f71442bea50.png')`
         }}
       />
+      <div className="absolute inset-0 bg-white/80" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
