@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
@@ -90,6 +90,14 @@ const Header = () => {
               className="hidden md:flex"
             >
               <Instagram className="w-4 h-4" />
+            </Button>
+            <Button 
+              variant="outline"
+              size="sm"
+              onClick={() => window.open('https://www.linkedin.com/company/samskaar-foundation/?viewAsMember=true', '_blank')}
+              className="hidden md:flex"
+            >
+              <Linkedin className="w-4 h-4" />
             </Button>
           </div>
         </div>
