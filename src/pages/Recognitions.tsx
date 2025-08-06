@@ -38,6 +38,7 @@ const Recognitions = () => {
       icon: Trophy,
       color: "text-purple-600",
       bgColor: "bg-purple-50",
+      image: "/lovable-uploads/fd4650b5-6486-4414-917c-0c88928ac876.png",
       link: "https://www.ibo.org/festival-of-hope/youth-in-action/ignite-digital-learning-of-tribal-students?contentId=204688",
       linkText: "View Project Details"
     },
