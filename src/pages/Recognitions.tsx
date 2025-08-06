@@ -51,6 +51,7 @@ const Recognitions = () => {
       icon: Globe,
       color: "text-green-600",
       bgColor: "bg-green-50",
+      image: "/lovable-uploads/a48f8753-ca36-47f9-b95f-b904ea59f97d.png",
       link: "https://usasolarcell.com/news/2025/01/27/teen-empowers-tribal-kids-with-solar-digital-education/",
       linkText: "Read Full Article"
     }
