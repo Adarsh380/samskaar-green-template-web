@@ -174,6 +174,54 @@ const Gallery = () => {
       description: "Official recognition ceremony acknowledging contributions to tribal education initiatives",
       category: "Recognition",
       image: "/lovable-uploads/38f486b8-25e4-479f-9d73-771e31e00445.png"
+    },
+    {
+      title: "Women's Learning Circle",
+      description: "Adult women participating in educational learning circle sessions with collaborative approach",
+      category: "Adult Education",
+      image: "/lovable-uploads/c820cb06-66b4-4835-ab1b-12924d983857.png"
+    },
+    {
+      title: "Community Education Session",
+      description: "Women engaged in group learning activities with educational materials and peer support",
+      category: "Adult Education",
+      image: "/lovable-uploads/b803d801-3886-48c2-8d8a-1a8283d0548e.png"
+    },
+    {
+      title: "Adult Literacy Program",
+      description: "Women participating in literacy development program with learning materials and group discussions",
+      category: "Adult Education",
+      image: "/lovable-uploads/e492bbbb-211c-46a9-8d00-f152671fc13c.png"
+    },
+    {
+      title: "Classroom Teaching Session",
+      description: "Interactive classroom session with students and teachers working on educational activities",
+      category: "Summer Camps",
+      image: "/lovable-uploads/a5d7f344-3265-4191-a8ec-cbdd00c8ea65.png"
+    },
+    {
+      title: "Student Learning Workshop",
+      description: "Students engaged in hands-on learning workshop with educational materials and peer collaboration",
+      category: "Summer Camps",
+      image: "/lovable-uploads/f2a9af94-e39c-4568-88b3-0299ea70296c.png"
+    },
+    {
+      title: "Individual Tutoring Session",
+      description: "One-on-one tutoring session with teacher providing personalized educational support",
+      category: "Summer Camps",
+      image: "/lovable-uploads/4dc86f18-de44-4229-a68b-75b3bfa70565.png"
+    },
+    {
+      title: "Student Morning Assembly",
+      description: "Students participating in morning assembly with prayer and community gathering",
+      category: "Summer Camps",
+      image: "/lovable-uploads/b5a85db3-8247-445b-bf47-9ea46cc49779.png"
+    },
+    {
+      title: "Physical Education Session",
+      description: "Students participating in physical education and yoga exercises in the school hall",
+      category: "Summer Camps",
+      image: "/lovable-uploads/3a87b275-25bc-4513-ae1f-a1c0987d23c1.png"
     }
   ];
 

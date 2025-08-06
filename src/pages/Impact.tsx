@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ImpactSection from "@/components/ImpactSection";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Calendar, Users, BookOpen, Heart, Target } from "lucide-react";
+import { MapPin, Calendar, Users, BookOpen, Heart, Target, Brain } from "lucide-react";
 
 const Impact = () => {
   const journeySteps = [
@@ -27,6 +27,13 @@ const Impact = () => {
       description: "In collaboration with Indigenous Development Organization, we launched solar-powered digital education across 15 bridge schools in Bhadrachalam. Our pilot with one Solar TV increased attendance from 5 to over 50 students, leading to a successful Ketto fundraising campaign.",
       impact: "450+ students reached, 15 Solar TVs planned",
       icon: Heart
+    },
+    {
+      year: "2025",
+      title: "Chennai Summer Camp Initiative",
+      description: "Hosted an innovative summer camp in Chennai through 20 dedicated teacher volunteers. The program focused on teaching mathematical concepts, demonstrating STEM experiments, and conducting yoga sessions for holistic student development.",
+      impact: "20 teacher volunteers, comprehensive STEM & wellness program",
+      icon: Brain
     }
   ];
 
@@ -54,6 +61,14 @@ const Impact = () => {
       students: "450+",
       description: "Partnered with Indigenous Development Organization to bring digital literacy to tribal communities. Installed Solar TVs in areas without electricity, with our pilot program dramatically increasing attendance from 5 to over 50 students.",
       achievements: ["15 bridge schools targeted", "Solar TV pilot success", "Ketto fundraising campaign", "₹5.85 lakh raised"]
+    },
+    {
+      title: "Chennai Summer Camp with Teacher Volunteers",
+      location: "Chennai, Tamil Nadu",
+      date: "Summer 2025",
+      students: "Multiple Schools",
+      description: "Launched an innovative summer camp program in Chennai with 20 trained teacher volunteers. The comprehensive program included interactive mathematics teaching, hands-on STEM experiments, and wellness through yoga sessions, providing students with a well-rounded educational experience.",
+      achievements: ["20 teacher volunteers trained", "Math concept teaching", "STEM experiment demonstrations", "Yoga and wellness sessions"]
     }
   ];
 
@@ -68,7 +83,7 @@ const Impact = () => {
               Our Impact Journey
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              From humble beginnings in 2022 to transforming education across Telangana - 
+              From humble beginnings in 2022 to transforming education across Telangana and Tamil Nadu - 
               discover how Samskaar Foundation has grown through community partnerships and innovative solutions.
             </p>
           </div>
