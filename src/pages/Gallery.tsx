@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -222,6 +221,12 @@ const Gallery = () => {
       description: "Students participating in physical education and yoga exercises in the school hall",
       category: "Summer Camps",
       image: "/lovable-uploads/3a87b275-25bc-4513-ae1f-a1c0987d23c1.png"
+    },
+    {
+      title: "Chennai Summer Camp Program",
+      description: "Comprehensive summer camp program in Chennai tailored for 125 students of grades 6 to 10, featuring 20 teacher volunteers conducting math concepts, STEM experiments, and yoga sessions",
+      category: "Summer Camps",
+      image: "/lovable-uploads/a5d7f344-3265-4191-a8ec-cbdd00c8ea65.png"
     }
   ];
 
