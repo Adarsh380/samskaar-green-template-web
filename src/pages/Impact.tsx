@@ -30,9 +30,9 @@ const Impact = () => {
     },
     {
       year: "2025",
-      title: "Chennai Summer Camp Initiative",
-      description: "Hosted an innovative summer camp in Chennai through 20 dedicated teacher volunteers. The program focused on teaching mathematical concepts, demonstrating STEM experiments, and conducting yoga sessions for holistic student development.",
-      impact: "20 teacher volunteers, comprehensive STEM & wellness program",
+      title: "Chennai Summer Camp in Collaboration with Anandam",
+      description: "Partnered with Anandam Trust, an NGO based in Chennai, to host a comprehensive summer camp. 25 teacher volunteers were provided resources and online meetings to tailor sessions for math concepts, Physics experiment demonstrations, and yoga sessions.",
+      impact: "Impacted 125 students from grades 6 to 10 through intensive summer learning programs",
       icon: Brain
     }
   ];
@@ -63,12 +63,12 @@ const Impact = () => {
       achievements: ["15 bridge schools targeted", "Solar TV pilot success", "Ketto fundraising campaign", "₹5.85 lakh raised"]
     },
     {
-      title: "Chennai Summer Camp with Teacher Volunteers",
+      title: "Chennai Summer Camp in Collaboration with Anandam",
       location: "Chennai, Tamil Nadu",
       date: "Summer 2025",
-      students: "Multiple Schools",
-      description: "Launched an innovative summer camp program in Chennai with 20 trained teacher volunteers. The comprehensive program included interactive mathematics teaching, hands-on STEM experiments, and wellness through yoga sessions, providing students with a well-rounded educational experience.",
-      achievements: ["20 teacher volunteers trained", "Math concept teaching", "STEM experiment demonstrations", "Yoga and wellness sessions"]
+      students: "125 Students (Grades 6-10)",
+      description: "Partnered with Anandam Trust, an NGO based in Chennai, to host a comprehensive summer camp impacting 125 students from grades 6 to 10. 25 teacher volunteers were provided resources and online meetings to tailor sessions for math concepts, Physics experiment demonstrations, and yoga sessions.",
+      achievements: ["25 teacher volunteers provided resources", "Online meetings for session tailoring", "Math concept teaching", "Physics experiment demonstrations", "Yoga and wellness sessions"]
     }
   ];
 
