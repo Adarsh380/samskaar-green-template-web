@@ -57,7 +57,7 @@ const About = () => {
                 What started as a small initiative to set up libraries in government schools has grown into a comprehensive educational transformation program. We've expanded our reach to include summer camps, digital literacy programs, and community engagement initiatives.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Today, we're proud to have impacted over 450 students across 10 government schools and 13 tribal hamlets, with a focus on sustainable, community-driven change.
+                Today, we're proud to have impacted over 1000 students across 10 government schools and 13 tribal hamlets, with a focus on sustainable, community-driven change.
               </p>
             </div>
             <div className="bg-primary/5 rounded-2xl p-8">
