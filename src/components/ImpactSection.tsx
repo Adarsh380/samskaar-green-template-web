@@ -6,23 +6,23 @@ const ImpactSection = () => {
   const impacts = [
     {
       icon: Users,
-      number: "1000+",
-      title: "Students Transformed",
-      description: "Lives changed through our educational programs",
+      number: "140+",
+      title: "Government School Students",
+      description: "Students impacted through summer camps",
       color: "text-green-600"
     },
     {
       icon: BookOpen,
       number: "10",
-      title: "Government Schools",
-      description: "Libraries established in Telangana",
+      title: "School Libraries",
+      description: "Libraries impacting over 500 school students",
       color: "text-blue-600"
     },
     {
       icon: Monitor,
-      number: "13",
-      title: "Solar TVs Installed",
-      description: "Digital literacy in Badari-Kothagudam hamlets",
+      number: "450+",
+      title: "Tribal Students",
+      description: "Digital literacy program beneficiaries",
       color: "text-purple-600"
     },
     {
