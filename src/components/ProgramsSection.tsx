@@ -10,21 +10,21 @@ const ProgramsSection = () => {
       icon: BookOpen,
       title: "School Libraries",
       description: "Setting up fully equipped libraries in government schools to foster reading habits and academic excellence among students.",
-      achievements: "10 libraries established",
+      achievements: "10 libraries impacting over 500 school students",
       color: "bg-green-50 border-green-200"
     },
     {
       icon: Sun,
       title: "Summer Camps",
       description: "Engaging educational summer camps that combine learning with fun activities, keeping students motivated during holidays.",
-      achievements: "450+ students participated",
+      achievements: "140+ government school students impacted",
       color: "bg-yellow-50 border-yellow-200"
     },
     {
       icon: Monitor,
       title: "Digital Literacy",
       description: "Installing Solar TVs and promoting digital literacy in bridge schools and tribal hamlets for modern education access.",
-      achievements: "13 Solar TVs installed",
+      achievements: "450+ tribal students impacted",
       color: "bg-blue-50 border-blue-200"
     },
     {
