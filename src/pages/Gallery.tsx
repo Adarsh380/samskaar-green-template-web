@@ -227,6 +227,36 @@ const Gallery = () => {
       description: "Summer camp program in collaboration with Anandam Trust, an NGO based in Chennai, impacting 125 students from grades 6 to 10. 25 teacher volunteers were provided resources and online meetings to tailor sessions for math concepts, Physics experiment demonstrations, and yoga sessions",
       category: "Summer Camps",
       image: "/lovable-uploads/a5d7f344-3265-4191-a8ec-cbdd00c8ea65.png"
+    },
+    {
+      title: "Interactive Learning Session",
+      category: "Education",
+      image: "/lovable-uploads/889f810b-bd1a-48f8-b0ae-d8773e8d1332.png"
+    },
+    {
+      title: "Outdoor Tribal Education Session",
+      category: "Tribal Programs",
+      image: "/lovable-uploads/5790982f-cf93-4287-b506-4fbd7054100f.png"
+    },
+    {
+      title: "Summer Camp Workshop",
+      category: "Summer Camps",
+      image: "/lovable-uploads/0bb6bd8c-8950-49ba-9e6d-af79654a78bf.png"
+    },
+    {
+      title: "Classroom Learning with Environmental Awareness",
+      category: "Education",
+      image: "/lovable-uploads/149f4bcb-edc6-4b12-b1fd-fa3888e1729e.png"
+    },
+    {
+      title: "Educational Resource Distribution",
+      category: "Programs",
+      image: "/lovable-uploads/ec3ff4f7-2034-47b3-a015-3f119a825abd.png"
+    },
+    {
+      title: "Digital Learning Initiative for Tribal Students",
+      category: "Digital Programs",
+      image: "/lovable-uploads/047633c6-206c-4c03-aab1-f612e91fb68e.png"
     }
   ];
 
