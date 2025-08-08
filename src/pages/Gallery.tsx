@@ -262,7 +262,6 @@ const Gallery = () => {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
