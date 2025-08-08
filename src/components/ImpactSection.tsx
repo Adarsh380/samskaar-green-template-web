@@ -6,16 +6,16 @@ const ImpactSection = () => {
   const impacts = [
     {
       icon: Users,
-      number: "140+",
-      title: "Government School Students",
-      description: "Students impacted through summer camps",
+      number: "1000+",
+      title: "Government School & Tribal Students",
+      description: "Lives changed through our educational programs",
       color: "text-green-600"
     },
     {
       icon: BookOpen,
       number: "10",
-      title: "School Libraries",
-      description: "Libraries impacting over 500 school students",
+      title: "Government School Libraries",
+      description: "Libraries established impacting over 500 students",
       color: "text-blue-600"
     },
     {
