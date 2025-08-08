@@ -257,6 +257,16 @@ const Gallery = () => {
       title: "Digital Learning Initiative for Tribal Students",
       category: "Digital Programs",
       image: "/lovable-uploads/047633c6-206c-4c03-aab1-f612e91fb68e.png"
+    },
+    {
+      title: "Certificate Presentation Ceremony",
+      category: "Recognition",
+      image: "/lovable-uploads/2365c6cf-726f-42ce-a536-9e82305f99fe.png"
+    },
+    {
+      title: "Summer Program Certificate of Completion",
+      category: "Certificates",
+      image: "/lovable-uploads/c8f35c1c-5bd1-4ede-b019-97da677f8cac.png"
     }
   ];
 
